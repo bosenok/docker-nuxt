@@ -12,7 +12,7 @@ FROM mrsunshine/nuxt
 
 ## Image on Docker Hub
 
-https://hub.docker.com/r/mrsunshine/nuxt/
+https://hub.docker.com/r/bosenok/nuxt/
 
 
 ## License

@@ -36,7 +36,9 @@ docker image build -t nuxt:build-essentials . && \
 
 docker image tag nuxt:build-essentials bosenok/nuxt:build-essentials && \
 
-docker push bosenok/nuxt:build-essentials
+docker push bosenok/nuxt:build-essentials && \
+
+cd ..
 ```
 ## License
 

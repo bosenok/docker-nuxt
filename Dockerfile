@@ -9,10 +9,7 @@ RUN apk update && apk upgrade && apk add git
 
 ONBUILD COPY . /usr/src/app/
 
-# https://github.com/mhart/alpine-node/issues/27#issuecomment-298395675
-ONBUILD RUN apk add --no-cache make gcc g++ python && \
-          npm install --silent && \
-          apk del make gcc g++ python
+ONBUILD RUN npm install
 
 # Build app
 ONBUILD RUN npm run build

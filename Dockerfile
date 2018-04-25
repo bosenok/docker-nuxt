@@ -9,7 +9,7 @@ RUN apk update && apk upgrade && apk add git
 
 ONBUILD COPY . /usr/src/app/
 
-ONBUILD RUN npm install
+ONBUILD RUN rm -rf node_modules && npm install
 
 # Build app
 ONBUILD RUN npm run build

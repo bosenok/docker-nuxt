@@ -11,6 +11,7 @@ ONBUILD COPY . /usr/src/app/
 
 # https://github.com/mhart/alpine-node/issues/27#issuecomment-298395675
 ONBUILD RUN apk add --no-cache --virtual .gyp make gcc g++ python && \
+          rm -rf node_modules && \
           npm install --silent && \
           apk del .gyp make gcc g++ python
 

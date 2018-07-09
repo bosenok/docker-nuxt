@@ -19,7 +19,6 @@ ONBUILD RUN apk add --no-cache --virtual .gyp make gcc g++ python && \
 ONBUILD RUN npm run build
 
 ENV HOST 0.0.0.0
-ENV NODE_ENV production
 EXPOSE 3000
 
 # start command
